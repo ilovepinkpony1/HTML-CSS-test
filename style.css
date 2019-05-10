@@ -1,3 +1,56 @@
+body {
+  font-family: Arial;
+  margin: 0px;
+}
 
+main {
+  display: grid;
+  grid-template: repeat(4, 231px)/repeat(4, 200px);
+  margin: 30px 0;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.sportsmen {
+  width: 200px;
+  position: relative;
+  padding: 10px;
+}
+.sportsmen img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.sportsmen h2 {
+  font-size: 20px;
+  line-height: 23px;
+  color: #2F4F4F;
+  text-align: center;
+}
+.sportsmen .number {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #8B0000;
+  position: absolute;
+  left: 158px;
+  top: 84px;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.sportsmen:hover {
+  background: #EEEEEE;
+  border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+  main {
+    grid-template: repeat(8, 231px)/repeat(2, 200px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
